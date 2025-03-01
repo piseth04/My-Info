@@ -1,20 +1,19 @@
-import Button from 'antd/es/button';
-import Card from 'antd/es/card';
 import React from 'react';
+import Typography from 'antd/es/typography';
+import Avatar from 'antd/es/avatar';
+import Card from 'antd/es/card';
+
+const { Title, Paragraph } = Typography;
 
 const App: React.FC = () => {
-  const handleClick = () => {
-    alert('Clicked!');
-  };
-
   return (
-    <div style={{ padding: '20px' }}>
-      <h1>Welcome to React with Ant Design</h1>
-      <Button type="primary" onClick={handleClick}>
-        Click Me
-      </Button>
-      <Card title="Sample Card" style={{ marginTop: '20px', maxWidth: '300px' }}>
-        <p>This is a sample card using Ant Design.</p>
+    <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', height: '100vh', backgroundColor: '#f0f2f5' }}>
+      <Card style={{ width: 400, textAlign: 'center', borderRadius: 10, boxShadow: '0 4px 8px rgba(0,0,0,0.1)' }}>
+        <Avatar size={100} src="https://via.placeholder.com/100" style={{ marginBottom: 20 }} />
+        <Title level={2}>John Doe</Title>
+        <Paragraph>Software Engineer | Web Developer</Paragraph>
+        <Paragraph>Email: johndoe@example.com</Paragraph>
+        <Paragraph>Location: New York, USA</Paragraph>
       </Card>
     </div>
   );
