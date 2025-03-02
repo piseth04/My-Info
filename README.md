@@ -44,5 +44,13 @@ Run the following command to install React Router:
 ```sh
 npm install react-router-dom
 ```
+
+### Step 5: Hosting
+
+Run the following command to Host the Website
+```sh
+npm run dev
+```
+
 </div>
 </div>
