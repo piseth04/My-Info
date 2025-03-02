@@ -6,7 +6,7 @@ const JohnDoe: React.FC = () => {
   const navigate = useNavigate();
 
   return (    
-    <div style={{ textAlign: 'center', marginTop: 50 }}>      
+    <div style={{ textAlign: 'center', marginTop: 60 }}>      
       <h1>John Doe</h1>      
       <p>This is the John Doe page.</p>    
       <Button type="primary" onClick={() => navigate('/')}>
