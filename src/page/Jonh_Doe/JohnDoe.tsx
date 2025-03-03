@@ -1,6 +1,6 @@
 import React from 'react';
-import Button from 'antd/es/button';
 import { useNavigate } from 'react-router-dom';
+import { Button } from '../antdImports';
 
 const JohnDoe: React.FC = () => {
   const navigate = useNavigate();
